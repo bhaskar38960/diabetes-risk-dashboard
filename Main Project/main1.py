@@ -10,7 +10,7 @@ def get_base64(img_path):
     with open(img_path, "rb") as f:
         return base64.b64encode(f.read()).decode()
 
-main_bg = get_base64("OIP (4).jpg")
+main_bg = get_base64("bg.jpg")
 
 # =========================
 # PAGE CONFIG
@@ -264,3 +264,4 @@ st.markdown(
     "<center><b>Diabetes Risk Prediction System</b> | Streamlit Healthcare Project</center>",
     unsafe_allow_html=True
 )
+
